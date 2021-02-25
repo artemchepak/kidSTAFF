@@ -31,7 +31,28 @@ h6 {
     font-size: inherit;
 }
 
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+button:focus,
+a:focus {
+    outline: none;
+}
+
+body {
+    color: $main-text;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    position: relative;
+}
+
 .container {
     width: 1200px;
     padding: 0 15px;
+    margin: 0 auto;
 }

@@ -2,6 +2,8 @@
 @import "libs";
 @import "fonts";
 @import "global";
+@import "top-sections";
+@import "footer";
 //index page start
 body {
     font-family: sans-serif;
@@ -29,7 +31,7 @@ body {
             font-size: 4rem;
             color: #fff;
             font-weight: 400;
-            margin-bottom: 1rem;
+            margin: 2rem 0;
         }
         h3 {
             font-size: 2rem;
@@ -38,7 +40,7 @@ body {
             text-transform: lowercase;
         }
         span {
-            color: $red-color;
+            color: $main-text;
             font-weight: 900;
         }
     }
@@ -71,8 +73,8 @@ body {
             background-color: $left-bg-color;
         }
         & .index__btn:hover {
-            background-color: $left-btn-hover-color;
-            border-color: $left-btn-hover-color;
+            background-color: $accent-color-boy;
+            border-color: $accent-color-boy;
         }
     }
     &__split.right {
@@ -86,8 +88,8 @@ body {
             background-color: $right-bg-color;
         }
         & .index__btn:hover {
-            background-color: $right-btn-hover-color;
-            border-color: $right-btn-hover-color;
+            background-color: $accent-color-girl;
+            border-color: $accent-color-girl;
         }
     }
     &__split.right,
