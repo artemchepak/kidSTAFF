@@ -1,57 +1,244 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul,
-li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    padding: 0;
-    font-size: inherit;
-}
-
-button {
-    outline: none;
-    cursor: pointer;
-}
-
-button:focus,
-a:focus {
-    outline: none;
-}
-
-body {
-    color: $main-text;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-}
-
-.container {
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *::after,
+    *::before {
+        box-sizing: inherit;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        padding: 0;
+        font-size: inherit;
+    }
+    
+    button {
+        outline: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    
+    button:focus,
+    a:focus {
+        outline: none;
+    }
+    
+    body {
+        color: $main-text;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+    }
+    
+    .container {
+        width: 1200px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    
+    .slick-slide img {
+        display: inline;
+    }
+    
+    .slick-active>div {
+        display: flex;
+    }
+    
+    .slick-dots {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 0 5px;
+        }
+        button {
+            padding: 0;
+            font-size: 0;
+            margin: 0;
+            width: 11px;
+            height: 11px;
+            border: 1px solid $light;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+    }
+    
+    .slick-active>button {
+        background-color: $light;
+    }
+    
+    //tabs
+    .tabs-content {
+        display: none;
+        &.tabs-content--active {
+            display: block;
+        }
+    }
+    
+    //product card
+    .product-slider__item {
+        width: 271px !important;
+        margin: 0 auto;
+    }
+    
+    .product-item {
+        &:hover {
+            box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+            color: $accent-color-boy;
+            &.product-item__notify-text {
+                color: $main-text;
+            }
+        }
+        &__wrapper {
+            position: relative;
+            width: 271px;
+            transition: all 0.3s;
+            border: 1px solid $dark-bg;
+            border-radius: 3px;
+            padding: 52px 20px 31px;
+            text-align: center;
+            transition: all 0.3s;
+            min-height: 400px;
+            width: 100%;
+            transition: all 0.3s;
+            &.product-item__wrapper--list {
+                width: 100%;
+            }
+        }
+        &__title {
+            padding: 14px 0 25px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        &__img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        &__favourite {
+            position: absolute;
+            top: 16px;
+            right: 19px;
+            width: 24px;
+            height: 22px;
+            background-color: transparent;
+            border: none;
+            z-index: 5;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 22px;
+                top: 0;
+                left: 0;
+                background-image: url('../images/favourite.svg');
+            }
+        }
+        &__favourite--active::before {
+            background-image: url('../images/favourite-active.svg');
+        }
+        &__price {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+            margin: 10px 0;
+        }
+        &__basket {
+            position: absolute;
+            width: 60px;
+            height: 40px;
+            background: $accent-color-boy;
+            border-radius: 10px 0px 0px 0px;
+            bottom: 0;
+            right: 0;
+            border: none;
+            padding-top: 7px;
+            z-index: 10;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &--sale::before {
+            content: 'SALE';
+            padding: 8px 15px;
+            background-color: $accent-color-boy;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.07em;
+            color: $light;
+            z-index: 10;
+        }
+        &--not-available {
+            .product-item__wrapper {
+                padding-bottom: 42px;
+            }
+            .product-item__price {
+                display: none;
+            }
+            .product-item__notify-text {
+                display: block;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 21px;
+            }
+            .product-item__basket {
+                display: none;
+            }
+            .product-item__notify-text {
+                color: $main-text;
+            }
+            .product-item__title {
+                padding-bottom: 13px;
+            }
+            .product-item__notify-link {
+                display: block;
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+                right: 0;
+                font-size: 16px;
+                line-height: 19px;
+                color: $accent-color-boy;
+                text-align: center;
+            }
+            .product-item__notify-link span {
+                border-bottom: 1px solid $accent-color-boy;
+            }
+        }
+        &__notify-text {
+            display: none;
+        }
+        &__notify-link {
+            display: none;
+        }
+    }

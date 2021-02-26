@@ -25,13 +25,13 @@ $(function() {
     });
 
     //product-slider
-    $('.product-slider').slick({
+    $('.products-slider').slick({
         dots: false,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="images/arrow-black-left.svg" alt="left arrow"></button>',
-        nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="images/arrow-black-right.svg" alt="right arrow"></button>'
+        arrows: false,
+        autoplay: true,
     })
 
     // aside
