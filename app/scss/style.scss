@@ -571,4 +571,31 @@
 
 /*footer end*/
 
+//breadcrumbs start
+.breadcrumbs {
+    margin: 40px 0;
+    &__list-item {
+        display: inline-block;
+        padding-right: 16px;
+        margin-right: 10px;
+        position: relative;
+        font-size: 15px;
+        line-height: 18px;
+        color: $dark-bg;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 5px;
+            background-image: url('../images/link-arrow.svg');
+            width: 6px;
+            height: 9px;
+        }
+        &:last-child::after {
+            display: none;
+        }
+    }
+}
+
+//breadcrumbs end
 @import "media";
