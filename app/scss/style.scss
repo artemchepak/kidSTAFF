@@ -2,6 +2,7 @@
 @import "libs";
 @import "fonts";
 @import "global";
+@import "girlColor";
 //index page start
 .index__wrapper {
     font-family: sans-serif;
@@ -311,6 +312,7 @@
         background-color: $accent-color-boy-hover;
         min-width: 200px;
         border: 1px $dark-bg solid;
+        border-top: none;
         border-radius: 4px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
@@ -319,7 +321,7 @@
         line-height: 18px;
         font-weight: 400;
         top: 64px;
-        left: 0;
+        left: -1px;
     }
     .drop-down__item {
         list-style: square;
@@ -420,9 +422,9 @@
 /*categories end*/
 
 
-/*products start*/
+/*popular start*/
 
-.products {
+.popular {
     &__inner {
         margin-bottom: 70px;
     }
@@ -444,7 +446,7 @@
             background-color: $accent-color-boy;
             color: $light;
         }
-        &+.products__tab {
+        &+.popular__tab {
             margin-left: 50px;
         }
     }
@@ -468,7 +470,7 @@
 }
 
 
-/*products end*/
+/*popular end*/
 
 
 /*banner start*/

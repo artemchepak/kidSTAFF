@@ -1,0 +1,104 @@
+//girl colors start
+.header.girl-color {
+    a:hover {
+        color: $accent-color-girl;
+        svg {
+            fill: $accent-color-girl;
+        }
+    }
+}
+
+.top.girl-color {
+    .top__search-btn {
+        svg {
+            &:hover {
+                fill: $accent-color-girl;
+            }
+        }
+    }
+    .top__phone-link {
+        &.callback {
+            color: $accent-color-girl;
+            border-bottom: 2px dashed $accent-color-girl;
+        }
+    }
+    .basket {
+        &__num {
+            background-color: $accent-color-girl;
+        }
+    }
+}
+
+.top-menu.girl-color {
+    .top-menu__inner {
+        background-color: $accent-color-girl;
+        color: $light;
+    }
+    .top-menu__items {
+        &:hover {
+            background-color: $accent-color-girl-hover;
+        }
+    }
+    .drop-down__list {
+        background-color: $accent-color-girl-hover;
+    }
+}
+
+.categories.girl-color {
+    .categories__item-title {
+        color: $accent-color-girl;
+    }
+}
+
+.popular.girl-color {
+    .popular__tabs {
+        border-bottom: 4px solid $accent-color-girl;
+    }
+    .popular__tab {
+        &.tab--active {
+            background-color: $accent-color-girl;
+        }
+    }
+}
+
+.product-item.girl-color {
+    &:hover {
+        color: $accent-color-girl;
+    }
+}
+
+.product-item--sale::before {
+    background-color: $accent-color-girl;
+}
+
+.product-item--not-available {
+    .product-item__notify-link {
+        color: $accent-color-girl;
+    }
+    .product-item__notify-link span {
+        border-bottom: 1px solid $accent-color-girl;
+    }
+}
+
+.product-item__wrapper.girl-color {
+    .product-item__favourite--active::before {
+        background-image: url('../images/favourite-active-girl.svg');
+    }
+    .product-item__basket {
+        background: $accent-color-girl;
+    }
+}
+
+.popular__more-link.girl-color {
+    &:hover {
+        background-color: $accent-color-girl-hover;
+    }
+}
+
+.footer.girl-color {
+    .footer-form__btn {
+        background-color: $accent-color-girl;
+    }
+}
+
+//girl colors end

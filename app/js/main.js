@@ -25,7 +25,7 @@ $(function() {
     });
 
     //product-slider
-    $('.products-slider').slick({
+    $('.popular-slider').slick({
         dots: false,
         infinite: true,
         slidesToShow: 4,
