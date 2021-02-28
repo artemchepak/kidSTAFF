@@ -30,7 +30,8 @@
     h3,
     h4,
     h5,
-    h6 {
+    h6,
+    p {
         margin: 0;
         padding: 0;
         font-size: inherit;
@@ -128,7 +129,6 @@
             text-align: center;
             transition: all 0.3s;
             min-height: 400px;
-            width: 100%;
             transition: all 0.3s;
             &.product-item__wrapper--list {
                 width: 100%;

@@ -7,7 +7,7 @@ $(function() {
         arrows: false
     });
 
-    //search tabs
+    //main page tabs
     $('.tab').on('click', function(e) {
         e.preventDefault();
 
@@ -34,7 +34,7 @@ $(function() {
         autoplay: true,
     })
 
-    // aside
+    // catalog page
 
     $('.filter-style').styler();
 
