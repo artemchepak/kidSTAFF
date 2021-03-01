@@ -442,7 +442,7 @@
     }
     &__tab {
         padding: 10px 20px;
-        & {
+        &.tab--active {
             background-color: $accent-color-boy;
             color: $light;
         }
@@ -842,6 +842,7 @@ button.reset-btn {
 .irs--flat {
     width: 100%;
     margin-top: -15px;
+    margin-bottom: 30px;
 }
 
 .irs--flat .irs-from,
