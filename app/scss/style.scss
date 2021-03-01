@@ -310,7 +310,7 @@
         position: absolute;
         z-index: 10;
         background-color: $accent-color-boy-hover;
-        min-width: 200px;
+        min-width: 300px;
         border: 1px $dark-bg solid;
         border-top: none;
         border-radius: 4px;
@@ -485,7 +485,7 @@
 //presents and school-goods start
 .presents,
 .school-goods {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 //presents and school-goods end
@@ -734,7 +734,7 @@ button.catalog__filter-btnline {
 
 button.reset-btn {
     border: 1px solid $accent-color-boy;
-    background-color: $light;
+    background-color: #fff;
     transition: all 0.3s;
     &:hover {
         background-color: $accent-color-boy;
@@ -1144,4 +1144,284 @@ button.reset-btn {
 }
 
 //aside filters end
+//product page start
+.product-card {
+    margin-bottom: 60px;
+    &__name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    &__content {
+        width: 570px;
+        border: 3px solid $light;
+        border-radius: 5px;
+        padding: 20px 30px;
+    }
+    &__price {
+        margin-bottom: 12px;
+    }
+    &__price-old {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        opacity: 0.6;
+        display: inline-block;
+        text-decoration: line-through;
+    }
+    &__price-new {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 45px;
+        color: $accent-color-girl;
+    }
+    &__link {
+        font-size: 12px;
+        line-height: 14px;
+        color: $accent-color-boy;
+    }
+    &__buttons {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        a {
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+        }
+    }
+    &__warranty {
+        margin-bottom: 30px;
+    }
+    &__warranty-text {
+        font-size: 14px;
+        line-height: 18px;
+        color: $dark-bg;
+    }
+    &__delivery {
+        font-size: 14px;
+        line-height: 18px;
+        li+li {
+            margin-top: 10px;
+        }
+        &-city {
+            margin-bottom: 10px;
+            font-weight: 700;
+            padding-bottom: 6px;
+            border-bottom: 2px solid $light;
+        }
+        &-city span {
+            color: $accent-color-boy;
+            border-bottom: 1px dashed $accent-color-boy;
+        }
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-time {
+            font-weight: 700;
+        }
+        &-service {
+            width: 220px;
+        }
+        &-price {
+            width: 60px;
+            text-align: right;
+        }
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img-box {
+        width: 500px;
+        padding-top: 64px;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        position: relative;
+        &::before {
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.12em;
+            padding: 13px 25px;
+        }
+    }
+    &__title {
+        font-family: 'SFProDisplay-Bold', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+    &__code {
+        font-size: 15px;
+        line-height: 18px;
+        opacity: 0.6;
+        margin-bottom: 22px;
+        margin-left: 30px;
+        min-width: 100px;
+    }
+    &__tab {
+        font-size: 20px;
+        line-height: 24px;
+        opacity: 0.6;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    &__tab+.product-card__tab {
+        margin-left: 17px;
+    }
+    &__tab.tab--active {
+        opacity: 1;
+        border-bottom: 2px solid $accent-color-boy;
+        font-family: 'SFProDisplay-Bold', sans-serif;
+        font-weight: 700;
+    }
+    &__list {
+        margin-bottom: 20px;
+    }
+    &__item {
+        padding: 15px 0 6px;
+        border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item-left {
+        padding-right: 15px;
+    }
+    &__item-right {
+        width: 125px;
+    }
+    &__more {
+        font-size: 14px;
+        line-height: 17px;
+        color: $accent-color-boy;
+        border-bottom: 1px solid $accent-color-boy;
+        margin-bottom: 40px;
+    }
+    &__btn button {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 16px 36px;
+        background: $accent-color-boy;
+        border: none;
+    }
+}
+
+.card {
+    &__tab-content {
+        border: 3px solid $light;
+        border-radius: 5px;
+        padding: 20px 30px;
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    &__tabs {
+        margin-bottom: 50px;
+    }
+    &__tab-box {
+        background: $light-bg;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 22px 0;
+        margin-bottom: 30px;
+    }
+    &__tab {
+        opacity: 0.6;
+        padding-bottom: 5px;
+        &.tab--active {
+            opacity: 1;
+            border-bottom: 2px solid $accent-color-boy;
+        }
+    }
+    &__top-line {
+        margin-bottom: 10px;
+    }
+}
+
+.tabs-content {
+    &__title {
+        margin-bottom: 30px;
+        opacity: 0.3;
+    }
+    &__characteristics {
+        font-size: 14px;
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-bottom: 2px solid $light;
+        padding-bottom: 4px;
+    }
+    &__characteristics-name {
+        font-weight: 700;
+    }
+    &__characteristics-value {
+        text-align: right;
+    }
+    &__review {
+        margin-top: 60px;
+    }
+    &__review-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        >div+div {
+            margin-left: 30px;
+        }
+    }
+    &__review-name {
+        font-size: 22px;
+        font-style: italic;
+    }
+    &__review-date {
+        opacity: 0.4;
+    }
+    &__review-text {
+        margin-bottom: 30px;
+    }
+    &__review-pros {
+        padding-left: 30px;
+        position: relative;
+        margin-bottom: 15px;
+        &::before {
+            content: '+';
+            font-size: 25px;
+            position: absolute;
+            color: green;
+            top: 2px;
+            left: 0;
+        }
+    }
+    &__review-cons {
+        padding-left: 30px;
+        position: relative;
+        margin-bottom: 15px;
+        &::before {
+            content: '-';
+            font-size: 50px;
+            position: absolute;
+            color: $accent-color-girl;
+            top: 2px;
+            left: 0;
+        }
+    }
+    &__review-respond {
+        text-align: right;
+        color: $accent-color-boy;
+        border-bottom: 1px dashed $accent-color-boy;
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}
+
+//product page end
 @import "media";

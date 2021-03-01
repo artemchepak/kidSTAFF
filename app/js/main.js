@@ -59,9 +59,24 @@ $(function() {
 
     $("#rate-yo").rateYo({
         normalFill: "#C4C4C4",
-        ratedFill: "#1C62CD",
+        ratedFill: "#ffd208",
         spacing: "7px",
     });
+    $("#rate-yo-rew").rateYo({
+        normalFill: "#C4C4C4",
+        ratedFill: "#4d648d",
+        spacing: "7px",
+    });
+
+
+    $('.product-card__img-box').slick({
+            infinite: true,
+            dots: true,
+            autoplay: true,
+            arrows: false
+        }
+
+    );
 
 });
 

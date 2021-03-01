@@ -93,8 +93,19 @@
         }
     }
     
+    .product-card__img-box .slick-dots {
+        bottom: 10px;
+        button {
+            border: 1px solid $accent-color-boy;
+        }
+    }
+    
     .slick-active>button {
         background-color: $light;
+    }
+    
+    .product-card__img-box .slick-active>button {
+        background-color: $accent-color-boy;
     }
     
     //tabs
@@ -128,7 +139,7 @@
             padding: 52px 20px 31px;
             text-align: center;
             transition: all 0.3s;
-            min-height: 400px;
+            min-height: 450px;
             transition: all 0.3s;
             &.product-item__wrapper--list {
                 width: 100%;
@@ -142,6 +153,7 @@
         }
         &__img {
             max-width: 100%;
+            max-height: 180px;
             margin: 0 auto;
         }
         &__favourite {
