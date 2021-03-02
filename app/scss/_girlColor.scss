@@ -44,12 +44,6 @@
     }
 }
 
-.categories.girl-color {
-    .categories__item-title {
-        color: $accent-color-girl;
-    }
-}
-
 .popular.girl-color {
     .popular__tabs {
         border-bottom: 4px solid $accent-color-girl;
@@ -99,6 +93,10 @@
     .footer-form__btn {
         background-color: $accent-color-girl;
     }
+}
+
+.girl-color .product-item--sale::before {
+    background-color: $accent-color-girl;
 }
 
 //girl colors end
