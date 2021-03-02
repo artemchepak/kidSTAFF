@@ -7,6 +7,7 @@ $(function() {
         arrows: false
     });
 
+
     //main page tabs
     $('.tab').on('click', function(e) {
         e.preventDefault();
@@ -17,6 +18,7 @@ $(function() {
         $(this).addClass('tab--active');
         $($(this).attr('href')).addClass('tabs-content--active');
 
+        $('.popular-slider').slick('setPosition');
     });
 
     //favourite icon    
@@ -33,6 +35,7 @@ $(function() {
         arrows: false,
         autoplay: true,
     })
+
 
     // catalog page
 
