@@ -1,4 +1,19 @@
 $(function() {
+    //mobile menu
+    $('.menu__btn').on('click', function() {
+        $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
+    });
+
+    $('.menu-mobile__link').on('click', function() {
+        $($(this).siblings('ul')).addClass('mobile-drop-down__list--active');
+    });
+
+    $('.close-menu').on('click', function() {
+        $($(this).parent('ul')).removeClass('mobile-drop-down__list--active');
+        console.log($(this).parent('ul'));
+    });
+
+
     //banner slider
     $('.banner-section__slider').slick({
         infinite: true,
@@ -80,6 +95,7 @@ $(function() {
         }
 
     );
+
 
 });
 

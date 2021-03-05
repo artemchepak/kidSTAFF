@@ -25,13 +25,13 @@
         text-align: center;
         // background-color: $index-top-bg;
         padding: 1.5rem 0;
-        h1 {
+        &-title {
             font-size: 4rem;
             color: $light;
             font-weight: 400;
             margin: 2rem 0;
         }
-        h3 {
+        &-subtitle {
             font-size: 2rem;
             color: $light;
             font-weight: 400;
@@ -50,7 +50,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        h3 {
+        &-text {
             font-size: 4rem;
             color: $light;
             position: absolute;
@@ -131,47 +131,28 @@
     width: $hover-width;
 }
 
-@media (max-width: 800px) {
-    h3 {
-        font-size: 2rem;
-        top: 30%;
-    }
-    .btn {
-        padding: 1rem;
-        width: 10rem;
-    }
-}
-
-@media (max-width: 450px) {
-    h3 {
-        font-size: 1.5rem;
-        top: 30%;
-    }
-    .btn {
-        padding: 0.8rem;
-        width: 7rem;
-    }
-}
-
 //index page end
 //header start
 .header {
-    background-color: $light;
-    font-size: 14px;
-    line-height: 18px;
+    position: relative;
     svg {
         fill: $main-text;
     }
-    a:hover {
-        color: $accent-color-boy;
-        svg {
-            fill: $accent-color-boy;
+    &__top {
+        font-size: 14px;
+        line-height: 18px;
+        background-color: $light;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
         }
-    }
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 0;
+        a:hover {
+            color: $accent-color-boy;
+            svg {
+                fill: $accent-color-boy;
+            }
+        }
     }
     &__menu-list {
         display: flex;
@@ -188,12 +169,7 @@
     svg:hover {
         fill: $accent-color-boy;
     }
-}
-
-//header end
-//top start
-.top {
-    &__inner {
+    &__middle {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -270,27 +246,27 @@
             background-color: $accent-color-boy;
             border-radius: 50%;
             text-align: center;
-            bottom: -14px;
-            right: -14px;
+            bottom: -2px;
+            right: -13px;
         }
     }
 }
 
-//top end
-//top-menu start
 .top-menu {
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $accent-color-boy;
-        color: $light;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $accent-color-boy;
+    color: $light;
+    font-size: 18px;
     &__list {
         font-weight: 700;
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+    &__link a {
+        color: $light;
     }
     &__items {
         padding: 20px 20px;
@@ -311,17 +287,15 @@
         z-index: 10;
         background-color: $accent-color-boy-hover;
         min-width: 300px;
-        border: 1px $dark-bg solid;
         border-top: none;
         border-radius: 4px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        box-shadow: $shadow;
         font-size: 14px;
         line-height: 18px;
         font-weight: 400;
-        top: 64px;
-        left: -1px;
+        top: 58px;
+        left: 0px;
     }
     .drop-down__item {
         list-style: square;
@@ -339,7 +313,31 @@
     }
 }
 
-//top-menu end
+.menu-mobile__list,
+.mobile-drop-down__list {
+    width: 250px;
+    background-color: $light;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    z-index: 10;
+    padding-top: 80px;
+    transition: all 0.3s;
+    height: 100vh;
+    padding-left: 20px;
+    &--active {
+        left: 0;
+    }
+    li+li {
+        margin-top: 20px;
+    }
+}
+
+.menu-mobile__item:active {
+    color: $accent-color-boy;
+}
+
+//header end
 //banner start
 .banner-section__slider-img {
     object-fit: cover;
@@ -1425,5 +1423,7 @@ button.reset-btn {
     }
 }
 
+//product page end
+@import "media";
 //product page end
 @import "media";

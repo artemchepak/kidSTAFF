@@ -1,0 +1,107 @@
+@media (max-width: 1100px) {
+    .header__search-input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 880px) {
+    .index__split-text {
+        font-size: 2rem;
+        top: 30%;
+    }
+    .btn {
+        padding: 1rem;
+        width: 10rem;
+    }
+    .top-menu__items {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 756px) {
+    .menu__btn {
+        display: block;
+        background-color: transparent;
+        border: none;
+        z-index: 11;
+    }
+    .menu__btn-line {
+        background: $main-text;
+        border-radius: 3px;
+        height: 3px;
+        width: 34px;
+        margin: 8px 0;
+    }
+    .logo-mobile {
+        display: block;
+        img {
+            height: 38px;
+        }
+    }
+    .logo {
+        display: none;
+    }
+    .header {
+        &__menu-list,
+        .header__box {
+            display: none;
+        }
+        &__menu {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        &__bottom {
+            display: none;
+        }
+        &__middle {
+            padding: 15px 0;
+            flex-direction: column-reverse;
+        }
+        &__search-input {
+            width: 420px;
+            height: 60px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        &__search-btn {
+            width: 40px;
+            height: 40px;
+            top: 27px;
+            right: 11px;
+        }
+        &__phone-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__phone-link.callback {
+            margin-left: 30px;
+            border-bottom: none;
+            padding-bottom: 0;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .index__split-text {
+        font-size: 1.5rem;
+        top: 30%;
+    }
+    .btn {
+        padding: 0.8rem;
+        width: 7rem;
+    }
+    .header {
+        &__search-input {
+            width: 290px;
+        }
+        &__phone-link {
+            font-size: 14px;
+            &.callback {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -55,12 +55,22 @@
         line-height: 24px;
         font-weight: 400;
         letter-spacing: 0.06em;
+        min-width: 320px;
+        overflow: hidden;
     }
     
     .container {
-        width: 1200px;
+        max-width: 1200px;
         padding: 0 15px;
         margin: 0 auto;
+    }
+    
+    .menu__btn {
+        display: none;
+    }
+    
+    .logo-mobile {
+        display: none;
     }
     
     .slick-slide img {
