@@ -16,6 +16,17 @@
     .breadcrumbs__inner {
         overflow-x: scroll;
     }
+    .product-card {
+        &__content {
+            margin-left: 0;
+            margin-top: 20px;
+            width: 100%;
+        }
+        &__box {
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
 }
 
 @media (max-width: 880px) {
@@ -127,6 +138,9 @@
             font-size: 18px;
         }
     }
+    .breadcrumbs {
+        margin: 15px 0 25px;
+    }
     .categories {
         &__inner {
             display: flex;
@@ -141,6 +155,36 @@
         &__item-title {
             margin: 20px 0;
         }
+    }
+    .card__tab-content {
+        padding: 15px;
+    }
+    .tabs-content__review {
+        margin-top: 25px;
+    }
+    .tabs-content__review-header {
+        flex-direction: column;
+        align-items: start;
+    }
+    .tabs-content__review-header>div+div {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .tabs-content__review-name {
+        font-size: 18px;
+    }
+    .tabs-content__review-date {
+        font-size: 12px;
+    }
+    .tabs-content__review-box {
+        font-size: 14px;
+    }
+    .tabs-content__review-text {
+        margin-bottom: 15px;
+    }
+    .tabs-content__review-pros,
+    .tabs-content__review-cons {
+        margin-bottom: 8px;
     }
 }
 
@@ -161,7 +205,7 @@
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 570px) {
     .footer {
         &__top-inner {
             justify-content: start;
@@ -197,6 +241,36 @@
     .social-list {
         justify-content: center;
     }
+    .product-card {
+        &__delivery-item {
+            flex-direction: column;
+            align-items: start;
+        }
+        &__delivery-price {
+            text-align: left;
+        }
+    }
+    .product-card__buttons {
+        flex-wrap: wrap;
+    }
+    .product-card__img-box {
+        width: 445px;
+    }
+    .product-card__name {
+        margin-bottom: 20px;
+    }
+    .product-card__title {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .rate {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0 !important;
+    }
+    .card__tab-box {
+        width: 580px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -221,5 +295,22 @@
     }
     .pagination__list-item {
         margin: 0;
+    }
+    .product-card__img-box {
+        width: 310px;
+    }
+    .product-card__buttons a {
+        margin-left: 21px;
+    }
+    .card__tab-box {
+        padding: 12px 0;
+    }
+    .card__tab {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .tabs-container {
+        font-size: 14px;
     }
 }
