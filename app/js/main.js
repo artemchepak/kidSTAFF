@@ -28,7 +28,7 @@ $(function() {
         e.preventDefault();
 
         $($(this).siblings()).removeClass('tab--active');
-        $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+        $($(this).parent().parent().siblings().find('div')).removeClass('tabs-content--active');
 
         $(this).addClass('tab--active');
         $($(this).attr('href')).addClass('tabs-content--active');
@@ -49,6 +49,30 @@ $(function() {
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
+        responsive: [{
+                breakpoint: 1130,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 860,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 580,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     })
 
 

@@ -329,19 +329,25 @@
         left: 0;
     }
     li+li {
-        margin-top: 20px;
+        margin-top: 15px;
     }
+}
+
+.menu-mobile__item {
+    padding-bottom: 5px;
 }
 
 .menu-mobile__item:active {
     color: $accent-color-boy;
+    padding-bottom: 3px;
+    border-bottom: 2px dashed $accent-color-boy;
 }
 
 //header end
-//banner start
+//banner-section start
 .banner-section__slider-img {
     object-fit: cover;
-    min-height: 300px;
+    // min-height: 300px;
     max-width: 100%;
     img {
         display: block;
@@ -350,7 +356,7 @@
     }
 }
 
-//banner end
+//banner-section end
 //advantages start
 .advantages {
     &__inner {
@@ -476,6 +482,9 @@
 
 .banner {
     margin-bottom: 50px;
+    img {
+        width: 100%;
+    }
 }
 
 
