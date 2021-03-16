@@ -8,15 +8,15 @@
     }
 }
 
-.top.girl-color {
-    .top__search-btn {
+.header__middle.girl-color {
+    .header__search-btn {
         svg {
             &:hover {
                 fill: $accent-color-girl;
             }
         }
     }
-    .top__phone-link {
+    .header__phone-link {
         &.callback {
             color: $accent-color-girl;
             border-bottom: 2px dashed $accent-color-girl;
@@ -30,6 +30,7 @@
 }
 
 .top-menu.girl-color {
+    background-color: $accent-color-girl;
     .top-menu__inner {
         background-color: $accent-color-girl;
         color: $light;
@@ -42,6 +43,10 @@
     .drop-down__list {
         background-color: $accent-color-girl-hover;
     }
+}
+
+.categories.girl-color .categories__item {
+    background-color: $accent-color-girl;
 }
 
 .popular.girl-color {

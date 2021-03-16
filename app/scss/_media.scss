@@ -26,6 +26,13 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+    .popular {
+        &__tab {
+            &+.popular__tab {
+                margin-left: 25px;
+            }
+        }
+    }
     .footer {
         &__top-inner {
             flex-wrap: wrap;
