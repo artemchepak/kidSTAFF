@@ -627,6 +627,7 @@
 
 .catalog__filter-items {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .catalog__filter-items button {
@@ -637,6 +638,7 @@
     background-color: $light;
     border-radius: 3px;
     border: none;
+    margin-bottom: 5px;
 }
 
 .catalog__filter-items button+button {
@@ -689,11 +691,24 @@ button.catalog__filter-btnline {
     display: flex;
 }
 
+.aside__btn {
+    display: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 20px 0 50px;
+    cursor: pointer;
+    width: 100%;
+    color: $light;
+    background-color: $accent-color-boy;
+}
+
 .aside-filter__form {
     padding: 0 10px;
-    border: 1px solid $dark-bg;
-    border-left: none;
-    border-radius: 3px;
+    // border: 1px solid $dark-bg;
+    // border-left: none;
+    // border-radius: 3px;
 }
 
 .catalog__inner-aside {

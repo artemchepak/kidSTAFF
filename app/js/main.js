@@ -77,6 +77,10 @@ $(function() {
 
 
     // catalog page
+    //aside btn
+    $('.aside__btn').on('click', function() {
+        $(this).next().slideToggle();
+    });
 
     $('.filter-style').styler();
 
@@ -119,6 +123,7 @@ $(function() {
         }
 
     );
+
 
 
 });
