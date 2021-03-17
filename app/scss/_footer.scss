@@ -1,0 +1,80 @@
+/*footer start*/
+
+.footer {
+    background-color: $dark-bg;
+    &__bottom {
+        padding: 46px 0 22px;
+        display: flex;
+        justify-content: center;
+    }
+    &__bottom-link {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    &__bottom-link+.footer__bottom-link {
+        margin-left: 81px;
+    }
+    &__top {
+        padding-top: 43px;
+    }
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__top-item.footer__top-newsletter {
+        width: 295px;
+        margin-right: 50px;
+    }
+    &__top-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    &-form {
+        margin-top: 34px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-form__input {
+        border: none;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 0 12px;
+        &::placeholder {
+            color: $dark-bg;
+        }
+    }
+    &-form__btn {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center;
+        letter-spacing: 0.12em;
+        padding: 10px 16px;
+        border: none;
+        background: $accent-color-boy;
+        color: $light-text;
+    }
+    &__top-item {
+        width: 200px;
+    }
+    &-list {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__top-item.footer__top-social {
+        width: 250px;
+    }
+    .social-list {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .social-list__item+.social-list__item {
+        margin-left: 30px;
+    }
+}
+
+
+/*footer end*/
