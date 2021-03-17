@@ -1,6 +1,6 @@
 # kidSTAFF
 
-**kidSTAFF** - multi-page e-comerce project markup
+**kidSTAFF** - multi-page e-commerce project markup
 
 Links to all pages:
 
